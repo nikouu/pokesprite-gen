@@ -93,7 +93,8 @@ typings/
 *~
 
 # macOS icons
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -118,3 +119,7 @@ ehthumbs_vista.db
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
+
+# IntelliJ
+pokesprite-gen.iml
+.idea
