@@ -1,7 +1,8 @@
 // pokesprite-gen-lib <https://github.com/msikma/pokesprite-gen>
 // © MIT license
 
-const fs = require('fs').promises
+const fs = require('fs');
+const path = require('path');
 
 /**
  * Takes an array of a boolean and a string, and returns a list of the strings for each boolean that is true.
@@ -16,8 +17,9 @@ const keyList = (...keyVal) => {
 
 /** Saves a file. */
 const saveFile = async (fn, path, buffer, binary) => {
-  const out = `${path}/${fn}`
-  fs.writeFile(out, buffer, binary ? 'binary' : 'utf8')
+  const out = `${path}/${fn}`;
+  ensureDirectoryExistence(out);
+  fs.promises.writeFile(out, buffer, binary ? 'binary' : 'utf8')
   return out
 }
 
@@ -34,6 +36,15 @@ const getBaseFromFn = fn => {
   const matches = fn.match(/(.*\/)?(.*)\..*$/)
   if (!matches) return null
   return matches[2]
+}
+
+const  ensureDirectoryExistence = filePath =>  {
+  var dirname = path.dirname(filePath);
+  if (fs.existsSync(dirname)) {
+    return true;
+  }
+  ensureDirectoryExistence(dirname);
+  fs.mkdirSync(dirname);
 }
 
 module.exports = {
