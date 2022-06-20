@@ -11,12 +11,12 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "dada-cli-tools": "^1.0.0",
+    "dada-cli-tools": "git+https://github.com/msikma/dada-cli-tools.git#4ccb2086a06a56a22bc9ad6fe932b6f932375eab",
     "fast-glob": "^3.2.4",
     "layout": "^2.0.0",
     "lodash": "^4.17.19",
     "copy-template-dir": "^1.4.0",
-    "pokesprite-images": "^2.1.0",
+    "pokesprite-images": "^2.6.0",
     "spritesmith": "^3.4.0"
   }
 }

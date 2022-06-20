@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "chalk": "^3.0.0",
-    "dada-cli-tools": "^1.0.0"
+    "dada-cli-tools": "git+https://github.com/msikma/dada-cli-tools.git#4ccb2086a06a56a22bc9ad6fe932b6f932375eab"
   }
 }

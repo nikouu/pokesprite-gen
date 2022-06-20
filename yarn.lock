@@ -1025,10 +1025,9 @@ cwise-compiler@^1.0.0, cwise-compiler@^1.1.2:
   dependencies:
     uniq "^1.0.0"
 
-dada-cli-tools@^1.0.0:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/dada-cli-tools/-/dada-cli-tools-1.0.8.tgz#6c523cf91068360786e6d31dee283714fa0ddf9b"
-  integrity sha512-ucdZsplmAjtVEnc3sfiuEiTH+p8SjQ3uZbQMgPDvOWkqVS9HjR/aEsT92jRiDDWr6+TXp627S08oEtwBXwOlJA==
+"dada-cli-tools@git+https://github.com/msikma/dada-cli-tools.git#4ccb2086a06a56a22bc9ad6fe932b6f932375eab":
+  version "1.0.9"
+  resolved "git+https://github.com/msikma/dada-cli-tools.git#4ccb2086a06a56a22bc9ad6fe932b6f932375eab"
   dependencies:
     argparse "^1.0.10"
     chalk "^2.0.0"
@@ -3124,10 +3123,10 @@ pngjs@^3.3.3:
   resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-3.4.0.tgz#99ca7d725965fb655814eaf65f38f12bbdbf555f"
   integrity sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==
 
-pokesprite-images@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/pokesprite-images/-/pokesprite-images-2.1.0.tgz#2d7930c962f76bd6c5c38f852283a87c2c179c00"
-  integrity sha512-sbc2TWzZ68FaJaKeUuCrRwpzPppKswhoxEmr9KTaLMgFrb+NP9NYQK1ndGQ2FTzpNL2cYE0G3XDNPvYlBY3CCQ==
+pokesprite-images@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/pokesprite-images/-/pokesprite-images-2.6.0.tgz#b782c1a15ba2504d0702e67c5604490650c8fe2b"
+  integrity sha512-yHqaUjf+S80rdBeYhRkhnz1IBL3c36+s/f4D3oEVPaIm01zYnr5m92gORCx0pw/tC1fUBG801CVIhIctCP1gew==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
